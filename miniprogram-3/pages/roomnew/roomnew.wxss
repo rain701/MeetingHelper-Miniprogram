@@ -1,0 +1,26 @@
+/* pages/roomnew/roomnew.wxss */
+
+/* pages/roomInfo/roomInfo.wxss */
+.save {
+	color: #fff;
+	background: #1D8CE0;
+	height: 80rpx;
+	line-height: 80rpx;
+	width: 92%;
+	margin-top: 55rpx;
+}
+.remove{
+  color: #fff;
+	background: #FF4949;
+	height: 80rpx;
+	line-height: 80rpx;
+	width: 92%;
+	margin-top: 20rpx;
+}
+.weui-label {
+	width: 160rpx !important;
+}
+.weui-cell_input {
+	padding-top:8rpx !important;
+	padding-bottom:8rpx !important;
+}

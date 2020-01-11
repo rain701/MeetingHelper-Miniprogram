@@ -1,0 +1,7 @@
+{
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "各地会议室列表",
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+}

@@ -1,0 +1,7 @@
+{
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "管理员会议室列表",
+  "backgroundColor": "#fff",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": false
+}

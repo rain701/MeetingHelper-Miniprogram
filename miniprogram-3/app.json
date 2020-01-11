@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/boardroom/boardroom",
+    "pages/user/user",
+    "pages/main/main",
+    "pages/roomnew/roomnew",
+    "pages/roomCreate/roomCreate",
+    "pages/meetReserve/meetReserve",
+    "pages/meetCheck/meetCheck",
+    "pages/RTList/RTList",
+    "pages/MRList/MRList",
+    "pages/userRecords/userRecords",
+    "pages/signUp/signUp"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#0068c4",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "会议室预定助手",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "iconPath": "images/manage1.png",
+        "selectedIconPath": "images/manage.png",
+        "text": "预约"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "images/index1.png",
+        "selectedIconPath": "images/index.png",
+        "text": "个人"
+      }
+    ],
+    "position": "bottom",
+    "borderStyle": "black",
+    "selectedColor": "#1296db"
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap97.json"
+}

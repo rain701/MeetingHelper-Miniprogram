@@ -1,0 +1,31 @@
+<!--pages/roomnew/roomnew.wxml-->
+<!--pages/roomInfo/roomInfo.wxml-->
+<view class="page">
+    <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+                <view class="weui-label">会议室:</view>
+            </view>
+            <view class="weui-cell__bd">
+                <input class="weui-input" value="{{name}}" bindblur="getName" placeholder="请输入会议室名称"/>
+            </view>
+        </view>
+        <view class="weui-cell  weui-cell_input">
+             <view class="weui-cell__hd">
+                <view class="weui-label">地点:</view>
+            </view>
+            <view class="weui-cell__bd">
+                <input class="weui-input" value="{{place}}" bindblur="getPlace" placeholder="请输入会议室地点"/>
+            </view>
+        </view>
+        <view class="weui-cell  weui-cell_input">
+             <view class="weui-cell__hd">
+                <view class="weui-label">备注</view>
+            </view>
+            <view class="weui-cell__bd">
+                <input class="weui-input" value="{{describe}}" bindblur="getDescribe" placeholder="请输入备注信息"/>
+            </view>
+        </view>
+    </view>
+    <button class="create" bindtap="onCreate">添加</button>
+</view>

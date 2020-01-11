@@ -1,0 +1,24 @@
+<!-- schedule.wxml -->
+<view class="page">
+    <view class="schedule-wrap">
+      <view class="text" wx:if="{{meetingRecords.length==0}}">暂无记录</view>
+      <view class="block" wx:for="{{meetingRecords}}">
+        <navigator class="s-item" url="../meetCheck/meetCheck?topic={{item.topic}}&room_name={{item.room_name}}&date={{item.date}}&sttime={{item.stime}}&edtime={{item.etime}}&loc={{item.loc}}&room_desc={{item.desc}}&id={{item.id}}">
+            <view class="s-title">{{item.topic}}</view>
+            <view class="s-loc">{{item.room_name}}</view>
+            <view class="s-time-wrap">
+                <view class="s-ymd">{{item.date}}</view>
+                <view class="s-date">{{item.stime}}-{{item.etime}}</view>
+            </view>
+            <view class="s-details">
+                <image src="../../images/icon-arrow.png"></image>
+            </view>
+        
+        </navigator>
+      </view>
+    </view>
+    <navigator class="s-reserve" url="../meetReserve/meetReserve">
+        <image src="../../images/add.png"></image>
+    </navigator>
+</view>
+

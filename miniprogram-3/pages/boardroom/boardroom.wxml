@@ -1,0 +1,18 @@
+<view class="page">
+  
+  <!--主界面-->
+  <scroll-view scroll-y="true" style="height:{{winHeight}}px" bindscroll="bindScroll" 
+   scroll-into-view="{{scrollTopId}}" scroll-top="{{scrollTop}}">
+    <view class="selection" wx:for="{{boardroomList}}" wx:key="{{item.initial}}">
+      <view class="item_letter"  id="{{item.initial}}">{{item.initial}}</view>
+      <view class="item_city"  wx:for="{{item.boardroomInfo}}" wx:for-item="ct" wx:key="{{ct.room_id}}" data-id="{{ct.room_id}}" data-name="{{ct.name}}" bindtap="onSelectItem">
+        <view style="display: inline-block;font-size: 36rpx;">{{ct.name}}</view>
+        <!--选中钩子，根据check属性判断-->
+        <view class="s-check" wx:if="{{ct.room_id == selectMR_id}}" >
+          <image src="../../images/check.png"></image>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+

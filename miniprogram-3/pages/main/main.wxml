@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="page">
+	<view class="page-wrap">
+    <image class="logo" src="../../images/logo.jpg"></image> 
+		<view class="btn" wx:if="{{isadmin}}">
+			<button bindtap="toMRL">
+				<image src="../../images/schedule.png"></image>我的管理
+			</button>
+		</view>
+		<view class="btn" wx:if="{{isadmin}}">
+			<button bindtap="toRC">
+				<image src="../../images/local.png"></image>新建会议室
+			</button>
+		</view>
+    <view class="btn" wx:if="{{isadmin}}">
+			<button bindtap="toShare">
+				<image src="../../images/num.png"></image>分享账号
+			</button>
+		</view>
+     <view class="btn" wx:if="{{isadmin==0}}">
+			<button bindtap="toRTL" bindtap="toRTL">
+				<image src="../../images/schedule.png"></image>我的预约
+			</button>
+		</view>
+		<view class="btn" wx:if="{{isadmin==0}}">
+			<button bindtap="toMRV">
+				<image src="../../images/local.png"></image>新建预约
+			</button>
+		</view>
+		<view class="btn" wx:if="{{isadmin==0}}">
+      <modal id="modal" hidden="{{hiddenmodalput}}" title="绑定管理员" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+        <input type='text' value="{{adminAccount}}" bindblur="getadmin"  placeholder="请输入管理员账号" auto-focus/>
+      </modal>
+			<button bindtap="bound">
+				<image src="../../images/num.png"></image>绑定管理员
+			</button>
+		</view>
+	</view>
+</view>

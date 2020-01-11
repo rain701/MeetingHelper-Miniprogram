@@ -1,0 +1,15 @@
+<view class="page">
+<scroll-view scroll-y="true" style="height:{{winHeight}}px"  
+ scroll-into-view="{{scrollTopId}}" scroll-top="{{scrollTop}}">
+  	<view class="selection" wx:for="{{boardroomList}}" wx:key="{{item.loc}}">
+	    <view class="item_letter"  id="{{item.loc}}">{{item.loc}}</view>
+	    <view class="item_city"  wx:for="{{item.roomInfo}}" wx:for-item="ct" wx:key="{{ct.room_id}}" data-id="{{ct.room_id}}" data-name="{{ct.name}}" data-desc="{{ct.desc}}" data-location="{{ct.location}}"bindtap="onSelectItem">
+	      <view style="display: inline-block">{{ct.name}}</view>
+	    </view>
+  	</view>
+</scroll-view>
+<navigator class="s-reserve" url="../roomCreate/roomCreate">
+        <image src="../../images/add.png"></image>
+    </navigator>
+</view>
+

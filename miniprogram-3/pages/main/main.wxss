@@ -1,0 +1,26 @@
+/**index.wxss**/
+.page {
+	text-align: center;
+	height: 100%;
+}
+.page-wrap {
+	position: relative;
+  padding-top: 100rpx;
+}
+.btn button{
+	width: 65%;
+	margin-bottom: 30rpx;
+}
+.btn image {
+	width: 50rpx;
+	height: 50rpx;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20rpx;
+}
+.logo {
+    width: 85%;
+    height: 200rpx;
+    display: inline-block;
+    margin-bottom: 105rpx;
+}

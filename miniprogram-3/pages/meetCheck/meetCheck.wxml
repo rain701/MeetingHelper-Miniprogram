@@ -1,0 +1,33 @@
+<!-- details.wxml -->
+<view class="page">
+	<view class="details-wrap">
+		<view class="item">
+			<view class="item-title">主题</view>
+			<view class="item-content">{{topic}}</view>
+		</view>
+		<view class="item">
+			<view class="item-title">会议室</view>
+			<view class="item-content">{{room}}</view>
+		</view>
+		<view class="item">
+			<view class="item-title">地点</view>
+			<view class="item-content">{{location}}</view>
+		</view>
+		<view class="item">
+			<view class="item-title">备注</view>
+			<view class="item-content">{{desc}}</view>
+		</view>
+		<view class="item">
+			<view class="item-title">日期</view>
+			<view class="item-content">{{date}}</view>
+		</view>
+		<view class="item">
+			<view class="item-title">时间</view>
+			<view class="item-content">{{time}}</view>
+		</view>
+	</view>
+	<view class="cancel-wrap">
+		<button class="warn" class="cancel" bindtap="onDelMeet">取消会议</button>
+	</view>
+</view>
+
